@@ -1,0 +1,13 @@
+name: ci
+on:
+  pull_request:
+    branches:
+    - foobar
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20
